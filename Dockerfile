@@ -5,7 +5,8 @@ COPY . .
 EXPOSE 3000
 CMD [ "node" , "index.js" ]
 RUN npm ci
-RUN cd src && npm start
+RUN cd src
+RUN npm start
 
 
 
