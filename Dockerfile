@@ -6,7 +6,7 @@ EXPOSE 3000
 CMD [ "node" , "index.js" ]
 RUN npm ci
 RUN cd src
-RUN node app.js
+# RUN node app.js
 
 
 
