@@ -7,6 +7,7 @@ CMD [ "node" , "index.js" ]
 RUN npm ci
 RUN cd src
 # RUN node app.js
+CMD ["npm" , "start"]
 
 
 
