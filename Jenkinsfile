@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/RAMESHKUMARVERMAGITHUB/Video-Call-App-NodeJS.git'
+                git branch: 'master', url: 'https://github.com/RAMESHKUMARVERMAGITHUB/Video-Call-App-NodeJS.git'
             }
         }
         stage("Sonarqube Analysis "){
