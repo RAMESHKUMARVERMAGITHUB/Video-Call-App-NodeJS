@@ -52,13 +52,13 @@ pipeline{
         stage("Docker Build & Push"){
             steps{
                 script{
-                    dir('/.docker/firefox'){
+                    // dir('/.docker/firefox'){
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
                        sh "docker build -t rameshkumarverma/video-call-app:latest ."
                        // sh "docker tag uber rameshkumarverma/video-call-app:latest "
                        sh "docker push rameshkumarverma/video-call-app:latest"
                        }
-                    }
+                    // }
                 }
             }
         }
